@@ -17,8 +17,6 @@ public class DigitOccurences {
 		if(num == 0 && digit ==0) 
 			count = 1;
 		while(num!=0) {
-			//count++;
-			
 			remainder = num % 10;
 			
 			if(digit == remainder) {

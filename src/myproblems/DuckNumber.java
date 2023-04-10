@@ -25,7 +25,7 @@ public class DuckNumber {
 			System.out.println("It is a DuckNumber");
 
 		} else {
-			System.out.println("It is Not a DuckNumber");
+			System.out.println("It is not a DuckNumber");
 		}
 		sc.close();
 	}
