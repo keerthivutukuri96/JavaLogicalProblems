@@ -14,6 +14,7 @@ public class DuckNumber {
 
 		while (num != 0) {
 
+			
 			if (num % 10 == 0) {
 				zerocount = true;
 				break;
