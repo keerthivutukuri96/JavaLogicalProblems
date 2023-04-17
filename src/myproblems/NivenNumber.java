@@ -1,4 +1,5 @@
 package myproblems;
+
 import java.util.Scanner;
 
 public class NivenNumber {
@@ -7,20 +8,21 @@ public class NivenNumber {
 		System.out.println("Please Enter Your");
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		int number = num;
+
+		System.out.println((num % sum(num) == 0) ? "Niven Number" : "Not a Niven Number");
+
+		sc.close();
+
+	}
+
+	private static int sum(int num) {
 		int digit, sum = 0;
 		while (num != 0) {
 			digit = num % 10;
-			num = num / 10;
 			sum = sum + digit;
+			num = num / 10;
+		}
 
-		}
-		if (number % sum == 0) {
-			System.out.println("I am a Niven Number");
-		} else {
-			System.out.println("I am not a Niven Number");
-		}
-		sc.close();
+		return sum;
 	}
-
 }
