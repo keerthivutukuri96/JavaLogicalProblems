@@ -22,7 +22,7 @@ public class PrimeNumber {
 		}
 	}
 	
-	//checking each number in between the range whether prime or not
+	//checking each number is whether prime or not and returns true or false
 	public static boolean primeCheck(int n1) {
 		boolean isPrime = true;
 		for (int i = 2; i < n1; i++) {
