@@ -18,7 +18,7 @@ public class MultiplesSum {
 			num = num / 10;
 	}
 		System.out.print("Sum of multiple of three Numbers : " + multiple_sum);
-		
+		scanner.close();
 	}
 
 }
