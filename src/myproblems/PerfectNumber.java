@@ -14,6 +14,11 @@ public class PerfectNumber {
 		//finding factors of the given number and adding them
 		int result=0;
 		
+		//handling the case where number is less than 1
+		if(number<=0) {
+			System.out.println("Please enter number greater than zero");
+			System.exit(0);
+		}
 		//handling the case where number is 1 
 		if(number == 1)
 			result =1;
