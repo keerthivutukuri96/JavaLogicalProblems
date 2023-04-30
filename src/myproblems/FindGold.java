@@ -12,13 +12,14 @@ public class FindGold {
 		Scanner sc = new Scanner(System.in);
 		String line = sc.nextLine();
 		line += '\n';
+		line = line.toLowerCase();
 		String temp = "";
-		List<String> list=new ArrayList<String>();  
+		//List<String> list=new ArrayList<String>();  
 		boolean isFound = false;
 		for(int i =0;i<line.length();i++) {
 			
 			if(Character.isWhitespace(line.charAt(i))||line.charAt(i)=='.'||line.charAt(i)=='\n') {
-				list.add(temp);
+				//list.add(temp);
 				//System.out.println(temp);
 				
 				if(temp.equals("gold")) {
