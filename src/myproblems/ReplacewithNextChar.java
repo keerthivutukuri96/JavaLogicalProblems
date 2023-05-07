@@ -15,15 +15,11 @@ public class ReplacewithNextChar {
 			if (myword.charAt(i) == ' ') {
 				output.append(' ');
 			}
+		
 			int a = myword.charAt(i);
-
-			char c = '\0';
-
 			if ((a >= 97 && a <= 122)) {
 				a++;
-				c = (char) a;
-				output.append(c);
-
+				output.append((char) a);
 			}
 
 		}
