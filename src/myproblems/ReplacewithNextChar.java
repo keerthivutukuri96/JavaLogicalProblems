@@ -24,6 +24,7 @@ public class ReplacewithNextChar {
 
 		}
 		System.out.println(output);
+		sc.close();
 	}
-
+	
 }
