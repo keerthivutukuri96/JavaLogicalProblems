@@ -14,15 +14,22 @@ public class SumOfCubes {
 		
 	}
 	public static int cubeSum(int num) {
-		int eachcube;
+		
 		if(num == 0) {
 			return 0;
 		}
 		else {
-			eachcube = num * num * num;
-			return  eachcube + cubeSum(num -1);
+			return  powThree(num) + cubeSum(num -1);
 		}
 		
 	}
-
+	
+	public static int powThree(int n) {
+		int product = 1;
+		for(int i=0;i<3;i++) {
+			product = product * n;
+		}
+		return product;
+		
+	}
 }

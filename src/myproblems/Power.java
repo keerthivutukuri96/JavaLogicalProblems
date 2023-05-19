@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Power {
 	
 	
-
+	//in this program we can also use Math.pow()
 	public static void main(String[] args) {
 		System.out.println("enter your base");
 		System.out.println("enter your exponent");
