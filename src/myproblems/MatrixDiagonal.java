@@ -2,7 +2,7 @@ package myproblems;
 
 import java.util.Scanner;
 
-public class MatrixFromUserInput {
+public class MatrixDiagonal {
 
 	public static void main(String[] args) {
 		
@@ -11,23 +11,28 @@ public class MatrixFromUserInput {
 		int rows=sc.nextInt();
 		System.out.println("Enter number of columns");
 		int columns = sc.nextInt();
-		int[][] myarray = new int[rows][columns];
-		
+		int arr[][] = new int[rows][columns];
 		System.out.println("Enter your elements in a matrix");
 		
-			for(int i=0;i<rows;i++) {
-				for(int j=0;j<columns;j++) {		 
-					myarray[i][j] =sc.nextInt(); 
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<columns;j++) {
+				arr[i][j]=sc.nextInt();
+			}
+		}
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++)
+			
+			{
+				if(i==j) {
+				System.out.print(arr[i][j] + " ");
+				}
+				else
+				{
+					System.out.print("- ");
 				}
 			}
-			for(int i=0;i<myarray.length;i++) {
-				
-				for(int j=0; j<myarray[i].length;j++) {
-					System.out.print(myarray[i][j] + " ");
-					
-				}
-				System.out.print("\n");
-			}
+			System.out.print("\n");
+		}
 		sc.close();
 	}
 

@@ -2,7 +2,7 @@ package myproblems;
 
 import java.util.Scanner;
 
-public class MatrixFromUserInput {
+public class SparseMatrix {
 
 	public static void main(String[] args) {
 		
@@ -12,6 +12,8 @@ public class MatrixFromUserInput {
 		System.out.println("Enter number of columns");
 		int columns = sc.nextInt();
 		int[][] myarray = new int[rows][columns];
+		int zerocount = 0;
+		int nonzerocount = 0;
 		
 		System.out.println("Enter your elements in a matrix");
 		
@@ -23,12 +25,25 @@ public class MatrixFromUserInput {
 			for(int i=0;i<myarray.length;i++) {
 				
 				for(int j=0; j<myarray[i].length;j++) {
-					System.out.print(myarray[i][j] + " ");
+					//System.out.print(myarray[i][j] + " ");
+					if(myarray[i][j] == 0) {
+						zerocount++;
+					}
+					else {
+						nonzerocount++;
+					}
 					
 				}
-				System.out.print("\n");
+				//System.out.print("\n");
 			}
-		sc.close();
+			if(zerocount > nonzerocount) {
+				System.out.println("SparseMatrix");
+			}
+			else {
+				System.out.println(" Not a SparseMatrix");
+			}
+			sc.close();
+		
 	}
 
 }
